@@ -28,7 +28,7 @@ const FacultySection = ({ faculty }) => {
             Learn from experienced teachers who are dedicated to your academic success
           </p>
         </motion.div>
-
+frontend/images/479492974_1291555798632827_4485357872493306414_n.jpg
         {/* Faculty Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {faculty.map((member, index) => (
