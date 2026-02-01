@@ -11,11 +11,31 @@ const CoursesSection = ({ courses }) => {
     }
   };
 
-  const colorClasses = [
-    'border-t-sangharsh-blue',
-    'border-t-sangharsh-green',
-    'border-t-sangharsh-yellow',
-  ];
+  const getColorClass = (index) => {
+    const colors = ['border-t-sangharsh-blue', 'border-t-sangharsh-green', 'border-t-[#facc15]'];
+    return colors[index % 3];
+  };
+
+  const renderSubjects = (subjects) => {
+    return subjects.map((subject, idx) => (
+      <span 
+        key={idx}
+        className="text-xs bg-sangharsh-green/10 text-sangharsh-green px-2 py-1 rounded"
+      >
+        {subject}
+      </span>
+    ));
+  };
+
+  const renderHighlights = (highlights) => {
+    const displayHighlights = highlights.slice(0, 3);
+    return displayHighlights.map((highlight, idx) => (
+      <li key={idx} className="flex items-center gap-2 text-sm text-slate-600">
+        <CheckCircle className="w-4 h-4 text-sangharsh-green flex-shrink-0" />
+        {highlight}
+      </li>
+    ));
+  };
 
   return (
     <section 
@@ -53,7 +73,7 @@ const CoursesSection = ({ courses }) => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               data-testid={`course-card-${index}`}
-              className={`course-card bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border-t-4 ${colorClasses[index % 3]}`}
+              className={`course-card bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border-t-4 ${getColorClass(index)}`}
             >
               <div className="p-6">
                 {/* Course Icon */}
@@ -87,14 +107,7 @@ const CoursesSection = ({ courses }) => {
                 <div className="mb-4">
                   <p className="text-xs font-semibold text-slate-700 mb-2">Subjects:</p>
                   <div className="flex flex-wrap gap-2">
-                    {course.subjects.map((subject, idx) => (
-                      <span 
-                        key={idx}
-                        className="text-xs bg-sangharsh-green/10 text-sangharsh-green px-2 py-1 rounded"
-                      >
-                        {subject}
-                      </span>
-                    ))}
+                    {renderSubjects(course.subjects)}
                   </div>
                 </div>
 
@@ -102,12 +115,7 @@ const CoursesSection = ({ courses }) => {
                 <div className="border-t border-slate-100 pt-4">
                   <p className="text-xs font-semibold text-slate-700 mb-2">Highlights:</p>
                   <ul className="space-y-1">
-                    {course.highlights.slice(0, 3).map((highlight, idx) => (
-                      <li key={idx} className="flex items-center gap-2 text-sm text-slate-600">
-                        <CheckCircle className="w-4 h-4 text-sangharsh-green flex-shrink-0" />
-                        {highlight}
-                      </li>
-                    ))}
+                    {renderHighlights(course.highlights)}
                   </ul>
                 </div>
               </div>
