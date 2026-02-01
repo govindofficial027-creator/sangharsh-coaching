@@ -1,0 +1,112 @@
+{
+  "identity": {
+    "name": "Sangharsh Classes",
+    "tagline": "Building Strong Foundations for a Successful Future",
+    "tone": "Academic, Trustworthy, Growth-Oriented, Professional",
+    "archetype": "The Sage (Knowledge) + The Caregiver (Support)",
+    "theme_mode": "light"
+  },
+  "typography": {
+    "primary_font": "Outfit",
+    "secondary_font": "DM Sans",
+    "google_fonts_import": "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Outfit:wght@300;400;600;700&display=swap",
+    "usage": {
+      "headings": "font-family: 'Outfit', sans-serif; font-weight: 700;",
+      "body": "font-family: 'DM Sans', sans-serif; font-weight: 400;",
+      "accent": "font-family: 'Outfit', sans-serif; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "DEFAULT": "#1e40af",
+        "foreground": "#ffffff",
+        "description": "Academic Blue - Trust, Intelligence"
+      },
+      "secondary": {
+        "DEFAULT": "#15803d",
+        "foreground": "#ffffff",
+        "description": "Growth Green - Success, Foundation"
+      },
+      "accent": {
+        "DEFAULT": "#facc15",
+        "foreground": "#1e293b",
+        "description": "Highlight Yellow - Focus, Energy"
+      },
+      "background": {
+        "DEFAULT": "#ffffff",
+        "alt": "#f8fafc"
+      },
+      "text": {
+        "primary": "#0f172a",
+        "secondary": "#475569",
+        "muted": "#94a3b8"
+      }
+    },
+    "gradients": {
+      "hero_overlay": "linear-gradient(to right, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%)",
+      "card_hover": "linear-gradient(135deg, rgba(30, 64, 175, 0.05) 0%, rgba(21, 128, 61, 0.05) 100%)"
+    }
+  },
+  "layout_strategies": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "spacing": {
+      "section_padding": "py-16 md:py-24",
+      "element_gap": "gap-6 md:gap-8"
+    },
+    "grid_system": {
+      "features": "grid grid-cols-1 md:grid-cols-3 gap-8",
+      "gallery": "columns-1 md:columns-3 gap-4 space-y-4"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 rounded-md font-medium transition-all shadow-sm hover:shadow-md",
+      "secondary": "bg-white text-primary border-2 border-primary hover:bg-primary/5 h-11 px-8 rounded-md font-medium transition-all",
+      "whatsapp": "fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-transform z-50 flex items-center justify-center"
+    },
+    "cards": {
+      "course": "bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden group",
+      "faculty": "bg-white rounded-lg overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all text-center p-6",
+      "testimonial": "bg-slate-50 p-8 rounded-2xl border border-slate-100 relative"
+    },
+    "visual_enhancers": {
+      "badges": "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+      "texture": "bg-[url('https://www.transparenttextures.com/patterns/graphy.png')] bg-fixed opacity-[0.03]"
+    }
+  },
+  "assets": {
+    "logo_url": "https://customer-assets.emergentagent.com/job_fd9f002f-2bb5-425d-9408-080228f6628f/artifacts/3sz8cx4v_IMG-20260201-WA0000.jpg",
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1758685734622-3e0a002b2f53?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwzfHx0ZWFjaGVyJTIwd3JpdGluZyUyMG9uJTIwYmxhY2tib2FyZCUyMG1hdGglMjBzY2llbmNlfGVufDB8fHx8MTc2OTkzMDc5OHww&ixlib=rb-4.1.0&q=85",
+      "about_student": "https://images.unsplash.com/flagged/photo-1574098335395-18cf525e45d6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBzdHVkZW50cyUyMHN0dWR5aW5nJTIwaW4lMjBjbGFzc3Jvb20lMjBoYXBweXxlbnwwfHx8fDE3Njk5MzA3OTR8MA&ixlib=rb-4.1.0&q=85",
+      "classroom_large": "https://images.unsplash.com/photo-1722573783625-eceb04251036?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwzfHxpbmRpYW4lMjBzdHVkZW50cyUyMHN0dWR5aW5nJTIwaW4lMjBjbGFzc3Jvb20lMjBoYXBweXxlbnwwfHx8fDE3Njk5MzA3OTR8MA&ixlib=rb-4.1.0&q=85",
+      "faculty_female": "https://images.unsplash.com/photo-1758685848122-64a287c1abde?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwyfHx0ZWFjaGVyJTIwd3JpdGluZyUyMG9uJTIwYmxhY2tib2FyZCUyMG1hdGglMjBzY2llbmNlfGVufDB8fHx8MTc2OTkzMDc5OHww&ixlib=rb-4.1.0&q=85",
+      "gallery_1": "https://images.unsplash.com/photo-1597743622436-c6b5661731e0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwyfHxpbmRpYW4lMjBzdHVkZW50cyUyMHN0dWR5aW5nJTIwaW4lMjBjbGFzc3Jvb20lMjBoYXBweXxlbnwwfHx8fDE3Njk5MzA3OTR8MA&ixlib=rb-4.1.0&q=85",
+      "gallery_2": "https://images.unsplash.com/photo-1594923544727-8794d5914331?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHwzfHxzY2llbmNlJTIwbGFib3JhdG9yeSUyMHN0dWRlbnRzJTIwaGlnaCUyMHNjaG9vbHxlbnwwfHx8fDE3Njk5MzA4MDF8MA&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "preferred": ["BookOpen", "GraduationCap", "Users", "Trophy", "Microscope", "Calculator", "Phone", "MapPin", "Mail"]
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'lucide-react' and 'framer-motion' if not present.",
+    "2. FONTS: Add the Google Fonts import to 'index.css' immediately.",
+    "3. TAILWIND: Update 'tailwind.config.js' to include the custom colors (primary: #1e40af, secondary: #15803d).",
+    "4. HERO SECTION: Use the 'hero_bg' image as a background with a white gradient overlay on the left side to ensure text readability. Do NOT center the text.",
+    "5. COURSES: Create a grid of cards. Each card should have a subtle top border (border-t-4) alternating between Primary Blue and Secondary Green.",
+    "6. GALLERY: Implement a simple masonry layout using the provided gallery images. Add a 'hover:scale-105' effect.",
+    "7. WHATSAPP: Add a fixed floating button at bottom-right with the WhatsApp logo (use react-icons/fa or an SVG).",
+    "8. CONTACT: Include a form with fields: Name, Class, Phone, Message. Use Shadcn Input/Textarea components.",
+    "9. FOOTER: Dark background (Slate 900) with white text. Include the address placeholder and contact links.",
+    "10. ANIMATION: Use 'framer-motion' for simple 'FadeInUp' effects on scroll for sections."
+  ],
+  "universal_guidelines": [
+    "Do not use 'Inter' font. Use 'Outfit' for headings and 'DM Sans' for body.",
+    "Avoid generic centered layouts. Use asymmetry.",
+    "Ensure high contrast for text. No gray-on-gray.",
+    "All interactive elements must have 'data-testid'.",
+    "Use 'sonner' for toast notifications."
+  ]
+}
